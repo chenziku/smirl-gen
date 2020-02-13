@@ -13,7 +13,6 @@ from baselines import logger
 from mpi4py import MPI
 import argparse
 
-# LOG_DIR = './log'
 LOG_DIR = '../train-procgen/log'
 
 def main():
@@ -26,10 +25,8 @@ def main():
     nminibatches = 8
     ppo_epochs = 3
     clip_range = .2
-    timesteps_per_proc = 25_000_000
+    timesteps_per_proc = 50_000_000
     use_vf_clipping = True
-    model_path = None # add saved model path
-    model_path = '../train-procgen/saved_model/baseline_coinrun'
 
     parser = argparse.ArgumentParser(description='Process procgen training arguments.')
     parser.add_argument('--env_name', type=str, default='coinrun')
@@ -98,7 +95,6 @@ def main():
         init_fn=None,
         vf_coef=0.5,
         max_grad_norm=0.5,
-        load_path=model_path
     )
 
 if __name__ == '__main__':
