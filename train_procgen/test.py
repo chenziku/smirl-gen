@@ -1,5 +1,5 @@
 import tensorflow as tf
-from baselines.ppo2 import ppo2, ppo2_normal
+from baselines.ppo2 import ppo2, ppo2_normal, test_runner
 from baselines.common.models import build_impala_cnn
 from baselines.common.mpi_util import setup_mpi_gpus
 from procgen import ProcgenEnv
@@ -81,7 +81,7 @@ def main():
         env=venv,
         network=conv_fn,
         total_timesteps=timesteps_per_proc,
-        save_interval=10,
+        save_interval=0,
         nsteps=nsteps,
         nminibatches=nminibatches,
         lam=lam,
