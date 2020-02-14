@@ -1,5 +1,5 @@
 import tensorflow as tf
-from baselines.ppo2 import ppo2
+from baselines.ppo2 import ppo2, ppo2_normal
 from baselines.common.models import build_impala_cnn
 from baselines.common.mpi_util import setup_mpi_gpus
 from procgen import ProcgenEnv
@@ -77,7 +77,7 @@ def main():
     conv_fn = lambda x: build_impala_cnn(x, depths=[16,32,32], emb_size=256)
 
     logger.info("training")
-    ppo2.learn(
+    ppo2_normal.learn(
         env=venv,
         network=conv_fn,
         total_timesteps=timesteps_per_proc,
