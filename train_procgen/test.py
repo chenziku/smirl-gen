@@ -77,7 +77,7 @@ def main():
     conv_fn = lambda x: build_impala_cnn(x, depths=[16,32,32], emb_size=256)
 
     logger.info("training")
-    ppo2_normal.learn(
+    ppo2.learn(
         env=venv,
         network=conv_fn,
         total_timesteps=timesteps_per_proc,
