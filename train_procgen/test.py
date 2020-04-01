@@ -1,5 +1,5 @@
 import tensorflow as tf
-from baselines.ppo2 import ppo2, ppo2_normal, test_runner
+from baselines.ppo2 import ppo2, ppo2_normal, ppo2_cvae
 from baselines.common.models import build_impala_cnn
 from baselines.common.mpi_util import setup_mpi_gpus
 from procgen import ProcgenEnv
