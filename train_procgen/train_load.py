@@ -28,8 +28,8 @@ def main():
     last_step = 4587520 # where we have left off in training
     timesteps_per_proc = 25_000_000 - last_step
     use_vf_clipping = True
-    model_path = '../train-procgen/saved_model/policy_280'
-    vae_path = '../train-procgen/saved_model/coinrun_vae'
+    model_path = '../train-procgen/saved_model/policy_bossfight_vae280'
+    vae_path = '../train-procgen/saved_model/bossfight_vae280'
 
     parser = argparse.ArgumentParser(description='Process procgen training arguments.')
     parser.add_argument('--env_name', type=str, default='coinrun')
