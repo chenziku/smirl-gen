@@ -13,7 +13,6 @@ from baselines import logger
 from mpi4py import MPI
 import argparse
 
-# LOG_DIR = './log'
 LOG_DIR = '../train-procgen/log'
 
 def main():
