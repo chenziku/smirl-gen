@@ -28,7 +28,7 @@ def main():
     timesteps_per_proc = 25_000_000
     use_vf_clipping = True
     model_path = None # add saved model path
-    model_path = '../train-procgen/saved_model/policy_vae_coinrun_early'
+    model_path = '../train-procgen/saved_model/policy_280'
 
     parser = argparse.ArgumentParser(description='Process procgen training arguments.')
     parser.add_argument('--env_name', type=str, default='coinrun')
