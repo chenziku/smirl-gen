@@ -1,6 +1,6 @@
 ## Algorithm Repo
 Algorithms (ppo2, ppo2_normal, ppo2_cvae) are in another repo forked from OpenAI Baseline:
-https://github.com/chenziku/baselines/ppo2
+https://github.com/chenziku/baselines/tree/master/baselines/ppo2
 
 ## Install Dependencies and Setting Up 
 For fast experiments, run the following on Google Colab:
