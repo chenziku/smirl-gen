@@ -27,7 +27,7 @@ Run the following for training from scratch (200 levels in easy mode on CoinRun,
 python -m strain-procgen.train --env_name coinrun --distribution_mode easy --num_levels 200
 ```
 
-For PPO + VAE, we can also run the following for training from a loaded policy and VAE (vae280/560):
+For PPO + VAE, we can also change model/vae paths in train_load.py and run the following for training from a loaded policy and VAE (vae280/560):
 ```
 python -m train-procgen.train_load --env_name coinrun --distribution_mode easy --num_levels 200
 ```
