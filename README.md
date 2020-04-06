@@ -6,7 +6,7 @@ https://github.com/chenziku/baselines/tree/master/baselines/ppo2
 For fast experiments, run the following on Google Colab:
 ```
 pip install procgen
-git clone https://github.com/chenziku/train-procgen.git
+git clone https://github.com/chenziku/smirl-gen.git
 pip uninstall -y imgaug
 pip install 'imgaug<0.2.7,>=0.2.5'
 pip install -e train-procgen
@@ -24,16 +24,16 @@ Specify the training algorithm it before the learn function in train.py or test.
 
 Run the following for training from scratch (200 levels in easy mode on CoinRun, starting from level 0):
 ```
-python -m train-procgen.train --env_name coinrun --distribution_mode easy --num_levels 200
+python -m smirl-gen.train --env_name coinrun --distribution_mode easy --num_levels 200
 ```
 
 For PPO + VAE, we can also run the following for training from a loaded policy and VAE (vae280/560):
 ```
-python -m train-procgen.train_load --env_name coinrun --distribution_mode easy --num_levels 200
+python -m smirl-gen.train_load --env_name coinrun --distribution_mode easy --num_levels 200
 ```
 Run the following for test (starting from level 1000):
 ```
-!python -m train_procgen.test --env_name bossfight --distribution_mode easy --start_level 1000
+!python -m smirl-gen.test --env_name bossfight --distribution_mode easy --start_level 1000
 ```
 
 Follow https://github.com/openai/train-procgen for other specifications
