@@ -1,4 +1,9 @@
 ## Algorithm Repo
+
+Reinforcement Learning Generalization with Surprise Minimization
+- Paper: https://arxiv.org/abs/2004.12399
+- Video: https://slideslive.com/38931304/reinforcement-learning-generalization-with-surprise-minimization
+
 Algorithms (ppo2, ppo2_normal, ppo2_cvae) are in another repo forked from OpenAI Baseline:
 https://github.com/chenziku/baselines/tree/master/baselines/ppo2
 
